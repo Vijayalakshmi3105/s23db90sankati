@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1= title
+  - if (toShow)
+    - let vehicalsid = toShow._id
+    - let type= toShow.type
+    - let milage = toShow.milage
+    - let price = toShow.price
+    div
+      div.row
+        div(class='vehicalsAttr mr-3') vehicals ID is:
+        div #{vehicalsid}
+      div.row
+        div(class='vehicalsAttr mr-3') vehicals Type is:
+        div #{type}
+      div.row
+        div(class='vehicalsAttr mr-3') vehicals Size is:
+        div #{milage}
+      div.row
+        div(class='vehicalsAttr mr-3') vehicals Cost is:
+        div #{price}
+  - else
+    p Vehical not found
