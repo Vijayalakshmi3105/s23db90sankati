@@ -18,13 +18,13 @@ const secured = (req, res, next) => {
 module.exports = router;
 //SS6
 /* GET detail costume page */
-router.get('/detail', secured, vehicals_controlers.vehicals_view_one_Page);
+router.get('/detail',secured, vehicals_controlers.vehicals_view_one_Page);
 //SS7
 /* GET create costume page */
-router.get('/create', secured, vehicals_controlers.vehicals_create_Page);
+router.get('/create',secured, vehicals_controlers.vehicals_create_Page);
 //SS8
 /* GET create update page */
-router.get('/update', secured, vehicals_controlers.vehicals_update_Page);
+router.get('/update',secured, vehicals_controlers.vehicals_update_Page);
 //SS9
 /* GET delete costume page */
-router.get('/delete', secured, vehicals_controlers.vehicals_delete_Page);
+router.get('/delete',secured, vehicals_controlers.vehicals_delete_Page);
