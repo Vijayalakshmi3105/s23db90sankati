@@ -29,7 +29,7 @@ const vehicalSchema = mongoose.Schema({
 
         min: 0,
 
-        max: 2000000
+        max: 4000000
 
 
 
